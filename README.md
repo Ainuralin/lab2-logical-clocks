@@ -108,14 +108,3 @@ python3 node.py --id C --port 8002 --peers http://<IP-A>:8000,http://<IP-B>:8001
 - Tie-breaker: origin ID (lexicographic order)
 - Optional: implement vector clocks or more advanced concurrency detection
 
----
-
-### Where to Add / Modify Code
-
-Search for # YOUR CODE HERE in node.py:
-
-- Implement Lamport clock rules (increment, send/receive)
-- Add delay rules for Scenario A
-- Improve retry/backoff logic for replication
-- Optional: vector clocks, snapshots, log replay
-
