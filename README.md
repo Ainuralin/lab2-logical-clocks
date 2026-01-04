@@ -89,9 +89,13 @@ python3 client.py --node http://<IP-B>:8001 put x 2
 
 - Stop a node (e.g., Node C) to simulate a temporary failure:
 
-# On EC2, stop Node C (Ctrl+C in terminal running node.py)
+#### On EC2, stop Node C (Ctrl+C in terminal running node.py)
 
 - Perform updates on Node A and Node B while Node C is offline.
+```bash
+python3 client.py --node http://<IP-A>:8000 put z 5 # On node A
+python3 client.py --node http://<IP-B>:8001 put z 6 # On node B
+```
 - Restart Node C:
 
 ```bash
